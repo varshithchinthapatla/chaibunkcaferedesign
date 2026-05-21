@@ -1,0 +1,106 @@
+import { Link } from "react-router-dom";
+
+export default function Header() {
+  return (
+    <header className="fixed top-5 left-0 w-full z-50 flex justify-center px-4">
+      <div
+        className="
+          flex
+          items-center
+          gap-5
+          md:gap-8
+          px-7
+          md:px-10
+          py-4
+          rounded-full
+          border
+          border-orange-400/20
+          bg-[#12071f]/75
+          backdrop-blur-2xl
+          shadow-[0_0_60px_rgba(255,140,0,0.12)]
+          w-fit
+        "
+      >
+        <Link
+          to="/"
+          className="
+            nav-item
+            text-white
+            font-semibold
+            text-sm
+            md:text-lg
+            hover:text-orange-300
+            transition-all
+            duration-300
+          "
+        >
+          Home
+        </Link>
+
+        <Link
+          to="/about"
+          className="
+            nav-item
+            text-white
+            font-semibold
+            text-sm
+            md:text-lg
+            hover:text-orange-300
+            transition-all
+            duration-300
+          "
+        >
+          About
+        </Link>
+
+        <Link
+          to="/history"
+          className="
+            nav-item
+            text-white
+            font-semibold
+            text-sm
+            md:text-lg
+            hover:text-orange-300
+            transition-all
+            duration-300
+          "
+        >
+          History
+        </Link>
+
+        <Link
+          to="/franchise"
+          className="
+            nav-item
+            text-white
+            font-semibold
+            text-sm
+            md:text-lg
+            hover:text-orange-300
+            transition-all
+            duration-300
+          "
+        >
+          Franchise
+        </Link>
+
+        <Link
+          to="/contact"
+          className="
+            nav-item
+            text-white
+            font-semibold
+            text-sm
+            md:text-lg
+            hover:text-orange-300
+            transition-all
+            duration-300
+          "
+        >
+          Contact
+        </Link>
+      </div>
+    </header>
+  );
+}
